@@ -14,6 +14,7 @@ def stats_for_today(raw_data)
   puts "number of commits: #{@commits}"
   puts "number of insertions: #{@insertions}"
   puts "number of deletions: #{@deletions}"
+  puts "insertions + deletions == #{@insertions + @deletions}"
 end
 
 case ARGV[0]
