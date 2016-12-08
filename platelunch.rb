@@ -2,6 +2,8 @@
 raw_data = `git log --since=1.day --shortstat | grep "files changed"`
 @insertions, @deletions, @commits = 0, 0, 0
 
+puts 'testing'
+
 def stats_for_today(raw_data)
   raw_data.scan(/changed, (\d+)/).each do |num|
     @insertions += num[0].to_i
