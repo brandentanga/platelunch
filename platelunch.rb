@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-raw_data = `git log --since=1.day --shortstat | grep "files changed"`
+raw_data = `git log --since=1.day --shortstat | findstr "files changed"`
 @insertions, @deletions, @commits = 0, 0, 0
 
 puts 'testing'
